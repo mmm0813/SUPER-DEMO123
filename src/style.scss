@@ -284,10 +284,67 @@ html,body {
   font-family: "Times New Roman","cwTeXMing", serif;
   margin-top: 60px;
   font-weight: 800;
+  opacity: 0;
+  
+  transition: all 0.3s;
+
+  animation-name: words;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  // 以下是保留在最後狀態，不會彈回去
+  animation-fill-mode: forwards;
 }
 
 .word-ne {
   font-family: "Times New Roman","cwTeXMing", serif;
   margin-top: 18px;
   line-height: 26px;
+  opacity: 0;
+  
+  transition: all 0.3s;
+  
+  animation-name: words;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes words {
+  0% {
+    opacity: 0;
+    }  
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+.name {
+  position: absolute;
+  left: 0;
+  // margin-top: 240px;
+  margin-left: 60px;
+  font-size: 52px;
+  letter-spacing: 10px;
+  
+ 
+  
+  transition: all 0s;
+  
+  animation-name: name;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes name {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
