@@ -1,0 +1,244 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Times New Roman","cwTeXMing", serif;
+  letter-spacing: 2px;
+  height: 100%;
+  margin: 0;
+}
+
+.navbar {
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-section {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transform: all 0.5s;
+}
+
+.logo-section:hover {
+  size: 120%;
+}
+
+.logo-pic .logo-s {
+  width: 30px;
+  height: 45px;
+  border: solid 5px #204051;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.logo-pic .logo-c {
+  width: 7px;
+  height: 7px;
+  background: #204051;
+  border-radius: 50%;
+}
+
+.logo-word {
+  font-family: "FFDIN","微軟正黑體";
+  text-decoration: none;
+  color: #204051;
+}
+.logo-word .logo-word-ch {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+.logo-word .logo-word-en {
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-section {
+  list-style-type: none;
+  margin-top: 23px;
+  padding-right: 40px;
+}
+.name-section .name-en {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin-bottom: 6px;
+}
+
+.name-section:before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  width: 20px;
+  height: 2px;
+  background: black;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.name-section:hover:before {
+  width: 76px;
+}
+
+.name-section:after {
+  content: '';
+  position: absolute;
+  bottom: 89.7px;
+  right: 18px;
+  width: 0%;
+  height: 0%;
+  border-style: solid;
+  border-color: transparent;
+  transform: rotate(-135deg);
+  border-radius: 2px;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.name-section:hover:after {
+  width: 3px;
+  height: 3px;
+  border-color: transparent transparent black black;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.btn {
+  padding: 6px 14px;
+  border: 2px solid #698474;
+  border-radius: 28px;
+  transition: all 0.3s;
+  color: #698474;
+}
+
+.btn:hover {
+  content: '';
+  background: #698474;
+  color: white;
+}
+
+.wrapper {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 80px;
+}
+
+.card1 {
+  transform: translate(360px, -30px);
+  z-index: 50;
+}
+
+.card2 {
+  transform: translate(200px, -100px);
+  z-index: 99;
+}
+
+.card3 {
+  transform: translate(20px, 50px);
+  z-index: 1;
+}
+
+.wordsection {
+  color: red;
+}
+
+.card {
+  width: 250px;
+  height: 380px;
+  transition: all 1s;
+  margin-right: 80px;
+}
+.card .card-content {
+  width: 100%;
+  height: 100%;
+}
+.card .card-content .card-img-container {
+  width: 100%;
+  height: 100%;
+}
+.card .card-content .card-img-container .card-hover-image {
+  opacity: 0;
+}
+.card .card-content .card-img-container .card-hover-image2 {
+  opacity: 0;
+}
+.card .card-content .card-img-container .card-hover-image3 {
+  opacity: 0;
+}
+.card .card-content .card-img-container img {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.8s;
+  border-radius: 8px;
+}
+.card .card-content .card-img-container:hover .card-hover-image {
+  opacity: 1;
+  box-shadow: 0px 0px 25px #cccccc;
+}
+.card .card-content .card-img-container:hover .card-original-image {
+  opacity: 0;
+}
+.card .card-content .card-img-container:hover .card-hover-image2 {
+  opacity: 1;
+  box-shadow: 0px 0px 25px #cccccc;
+}
+.card .card-content .card-img-container:hover .card-original-image2 {
+  opacity: 0;
+}
+.card .card-content .card-img-container:hover .card-hover-image3 {
+  opacity: 1;
+  box-shadow: 0px 0px 25px #cccccc;
+}
+.card .card-content .card-img-container:hover .card-original-image3 {
+  opacity: 0;
+}
+.card .card-original-image2 {
+  object-position: left;
+  border: 1px solid #dbdbdb;
+}
+.card .card-hover-image2 {
+  object-position: right;
+  border: 1px solid #dbdbdb;
+}
+.card .card-original-image3 {
+  border: 1px solid #dbdbdb;
+}
+
+.word-h {
+  font-family: "Times New Roman","cwTeXMing", serif;
+  margin-top: 60px;
+  font-weight: 800;
+}
+
+.word-ne {
+  font-family: "Times New Roman","cwTeXMing", serif;
+  margin-top: 18px;
+  line-height: 26px;
+}
